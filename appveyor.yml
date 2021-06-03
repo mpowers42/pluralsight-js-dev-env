@@ -1,4 +1,4 @@
-# Test against this version of Node.js
+# Test against this version of node.js
 environment:
   matrix:
     # node.js
@@ -6,7 +6,7 @@ environment:
 
 # Install scripts (runs after cloning repo)
 install:
-  # Get the lastest stable version of Node.js or io.js
+  # Get the lastest stable version of node.js or io.js
   - ps: Install-Product node $env:nodejs_version
   # Install modules
   - npm install
